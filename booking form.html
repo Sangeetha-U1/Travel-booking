@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<title>Sterial &mdash; Free Bootstrap 5 Website Template by Untree.co </title>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav mt-3">
+  <div class="container">
+
+    <div class="site-navigation">
+      <div class="row">
+
+        <!-- LOGO -->
+        <div class="col-6 col-lg-3">
+          <a href="index.html" class="logo m-0 float-start">Sterial</a>
+        </div>
+
+        <!-- DESKTOP MENU -->
+        <div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
+          <ul class="js-clone-nav text-center site-menu p-0 m-0">
+
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="#tour-packages">Tour Packages</a>
+            </li>
+
+            <li>
+              <a href="#destination-gallery">Destination Gallery</a>
+            </li>
+
+            
+<li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT SIDE (CONTACT BUTTON + BURGER) -->
+        <div class="col-6 col-lg-3 text-lg-end">
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu">
+            <li class="cta-button">
+              <a href="#">Booking Form</a>
+            </li>
+          </ul>
+
+          <!-- MOBILE BURGER -->
+          <a href="#"
+             class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+            <span></span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</nav>	
+
+
+<!-- POPUP -->
+<div id="popup" class="popup">Booking Submitted Successfully ✅</div>
+
+<!-- FORM -->
+<div class="booking-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+
+        <div class="card-box">
+
+          <h2 class="heading text-center mb-4">Book Your Trip</h2>
+
+          <form id="bookingForm">
+
+            <div class="mb-3">
+              <label>Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter name">
+            </div>
+
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter email">
+            </div>
+
+            <div class="mb-3">
+              <label>Phone</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Enter phone">
+            </div>
+
+            <div class="mb-3">
+              <label>Destination</label>
+              <select id="destination" class="form-control">
+                <option value="">Select</option>
+                <option>Maldives</option>
+                <option>Bali</option>
+                <option>Dubai</option>
+                <option>Switzerland</option>
+                <option>Japan</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label>Date</label>
+              <input type="date" id="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Message</label>
+              <textarea id="message" class="form-control" placeholder="Any request..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+              Submit Booking
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById("bookingForm");
+  const popup = document.getElementById("popup");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Get values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const destination = document.getElementById("destination").value;
+    const date = document.getElementById("date").value;
+
+    // Simple validation
+    if (!name || !email || !phone || !destination || !date) {
+      alert("Please fill all required fields ❌");
+      return;
+    }
+
+    // Show success popup
+    popup.style.display = "block";
+
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 3000);
+
+    // Reset form
+    form.reset();
+  });
+</script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/counter.js"></script>
+		<script src="js/rellax.js"></script>
+		<script src="js/flatpickr.js"></script>
+		<script src="js/glightbox.min.js"></script>
+		<script src="js/custom.js"></script>
+
+</body>
+</html>
