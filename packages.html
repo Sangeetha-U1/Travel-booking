@@ -59,12 +59,12 @@
               <a href="index.html">Home</a>
             </li>
 
-            <li>
+            <li class="active">
               <a href="packages.html">Tour Packages</a>
             </li>
 
             <li>
-              <a href="#destination-gallery">Destination Gallery</a>
+              <a href="destination.html">Destination Gallery</a>
             </li>
 
             
@@ -78,7 +78,7 @@
         <div class="col-6 col-lg-3 text-lg-end">
 
           <ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu">
-            <li class="cta-button" class="active">
+            <li class="cta-button">
               <a href="#">Booking Form</a>
             </li>
           </ul>
@@ -103,7 +103,7 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-start">
 				<div class="col-lg-6 mx-auto text-center">
-					<h1 class="heading" data-aos="fade-up">Book Your <span>Destination</span></h1>
+					<h1 class="heading" data-aos="fade-up">Tour <span>packages</span></h1>
           <p>Book your trip for your favaourite place make lot of memories.</p>
 				</div>
 			</div>
@@ -111,70 +111,86 @@
 	</div>
 
 
-<!-- POPUP -->
-<div id="popup" class="popup">Booking Submitted Successfully ✅</div>
+<!-- HERO -->
+<div class="container text-center" style="padding:60px 0;">
+  <h1>Our Tour Packages</h1>
+  <p>Choose your perfect travel experience</p>
+</div>
 
-<!-- FORM -->
-<div class="booking-section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
+<!-- PACKAGES -->
+<div class="container">
 
-        <div class="card-box">
+  <div class="row">
 
-          <h2 class="heading text-center mb-4">Book Your Trip</h2>
-
-          <form id="bookingForm">
-
-            <div class="mb-3">
-              <label>Full Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Enter name">
-            </div>
-
-            <div class="mb-3">
-              <label>Email</label>
-              <input type="email" id="email" class="form-control" placeholder="Enter email">
-            </div>
-
-            <div class="mb-3">
-              <label>Phone</label>
-              <input type="tel" id="phone" class="form-control" placeholder="Enter phone">
-            </div>
-
-            <div class="mb-3">
-              <label>Destination</label>
-              <select id="destination" class="form-control">
-                <option value="">Select</option>
-                <option>Maldives</option>
-                <option>Bali</option>
-                <option>Dubai</option>
-                <option>Switzerland</option>
-                <option>Japan</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label>Date</label>
-              <input type="date" id="date" class="form-control">
-            </div>
-
-            <div class="mb-3">
-              <label>Message</label>
-              <textarea id="message" class="form-control" placeholder="Any request..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary w-100">
-              Submit Booking
-            </button>
-
-          </form>
-
-        </div>
-
+    <!-- PACKAGE 1 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-1.jpg" class="img-responsive">
+        <h3>Maldives Luxury Tour</h3>
+        <p>5 Days / 4 Nights</p>
+        <h4>₹45,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
       </div>
     </div>
+
+    <!-- PACKAGE 2 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-2.jpg" class="img-responsive">
+        <h3>Bali Adventure Tour</h3>
+        <p>6 Days / 5 Nights</p>
+        <h4>₹38,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 3 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-3.jpg" class="img-responsive">
+        <h3>Santorini Romantic Trip</h3>
+        <p>4 Days / 3 Nights</p>
+        <h4>₹55,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 4 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-4.jpg" class="img-responsive">
+        <h3>Swiss Alps Tour</h3>
+        <p>7 Days / 6 Nights</p>
+        <h4>₹65,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 5 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-5.jpg" class="img-responsive">
+        <h3>Dubai Luxury Tour</h3>
+        <p>5 Days / 4 Nights</p>
+        <h4>₹50,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
+      </div>
+    </div>
+
+    <!-- PACKAGE 6 -->
+    <div class="col-md-4">
+      <div class="package-box">
+        <img src="images/img-6.jpg" class="img-responsive">
+        <h3>Japan Cherry Blossom</h3>
+        <p>6 Days / 5 Nights</p>
+        <h4>₹70,000</h4>
+        <a href="booking form.html" class="btn btn-primary btn-block">Book Now</a>
+      </div>
+    </div>
+
   </div>
 </div>
+
 	<div class="site-footer">
 		<div class="container">
 
@@ -245,41 +261,7 @@
 				</div>
 			</div> <!-- /.container -->
 		</div> <!-- /.site-footer -->
-
-
-
-<script>
-  const form = document.getElementById("bookingForm");
-  const popup = document.getElementById("popup");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    // Get values
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const destination = document.getElementById("destination").value;
-    const date = document.getElementById("date").value;
-
-    // Simple validation
-    if (!name || !email || !phone || !destination || !date) {
-      alert("Please fill all required fields ❌");
-      return;
-    }
-
-    // Show success popup
-    popup.style.display = "block";
-
-    setTimeout(() => {
-      popup.style.display = "none";
-    }, 3000);
-
-    // Reset form
-    form.reset();
-  });
-</script>
-	<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/aos.js"></script>
 		<script src="js/navbar.js"></script>
